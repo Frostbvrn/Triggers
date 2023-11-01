@@ -986,6 +986,7 @@ GameObject:
   - component: {fileID: 614520837}
   - component: {fileID: 614520836}
   - component: {fileID: 614520835}
+  - component: {fileID: 614520839}
   m_Layer: 0
   m_Name: Button_Pumpkin
   m_TagString: Untagged
@@ -1079,6 +1080,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &614520839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614520834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ad409c783995840b874eed9764337b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 1632830311}
+  onColor: {r: 1, g: 1, b: 1, a: 1}
+  offColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1001 &618981795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1247,6 +1263,7 @@ GameObject:
   - component: {fileID: 736816938}
   - component: {fileID: 736816937}
   - component: {fileID: 736816936}
+  - component: {fileID: 736816940}
   m_Layer: 0
   m_Name: Button_Ghost
   m_TagString: Untagged
@@ -1340,6 +1357,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &736816940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736816935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d07a4a8ae51d09540b63e0fc45374f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1461522735}
+  animationTrigger: Activate
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,6 +1543,33 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6c72bc4196c26b448a6120ad88fcbdc, type: 3}
+--- !u!1 &1461522733 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 37561f0e261ac6f448608f690366c935,
+    type: 3}
+  m_PrefabInstance: {fileID: 1896362994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1461522735
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461522733}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 875f0b0607325324aa4a8003e040630a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1496854745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1942,6 +2000,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1562481880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4265357a120fc474a93a97d8398c2275,
+    type: 3}
+  m_PrefabInstance: {fileID: 303615000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1632830311 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 4f2145cc23dc732478eac5bcc5b68ec8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1914860929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1646829892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2357,7 +2427,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 37561f0e261ac6f448608f690366c935,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1461522735}
   m_SourcePrefab: {fileID: 100100000, guid: 37561f0e261ac6f448608f690366c935, type: 3}
 --- !u!1001 &1913163969
 PrefabInstance:
@@ -2640,6 +2714,7 @@ GameObject:
   - component: {fileID: 2048879314}
   - component: {fileID: 2048879313}
   - component: {fileID: 2048879312}
+  - component: {fileID: 2048879316}
   m_Layer: 0
   m_Name: Button_Cauldron
   m_TagString: Untagged
@@ -2733,6 +2808,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2048879316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048879311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa7a5bfd78884f42b5a8468d64b5a3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 1562481880}
 --- !u!1001 &2066967856
 PrefabInstance:
   m_ObjectHideFlags: 0
